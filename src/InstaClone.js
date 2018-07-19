@@ -27,12 +27,15 @@ class InstaClone extends Component {
                             }}
 
                         />
-                        <Text> Robert </Text>
+                        <Text style = {{marginLeft: 10}}> Robert </Text>
                     </View>
 
+                    <View style = {{alignItems: "center"}}>
+                        <Text style={{fontSize: 30}}>...</Text>
+                    </View>
+
+
                 </View>
-
-
 
                 <Image
                     style = {{width: 100 + "%", height: 100}}
@@ -66,7 +69,9 @@ const styles = StyleSheet.create({
         height: 50,
         backgroundColor: "rgb(255, 255, 255)",
         flexDirection: "row",
-
+        // left and right padding
+        paddingHorizontal: 10,
+        justifyContent: "space-between"
     },
 
     userPic: {
