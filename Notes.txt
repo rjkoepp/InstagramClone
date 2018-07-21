@@ -1,0 +1,15 @@
+1:58:56
+
+componentDidMount() {
+    // once window mounts, get screen width
+    this.setState({
+        screenWidth: Dimensions.get("window").width,
+    });
+}
+
+Can do different styles in array:
+    <Image style={[styles.icon, {height: 40, width: 40}]} source={config.images.heartIcon} />
+
+
+
+
