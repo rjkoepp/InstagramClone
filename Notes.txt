@@ -1,4 +1,4 @@
-1:58:56
+2:14:25
 
 componentDidMount() {
     // once window mounts, get screen width
