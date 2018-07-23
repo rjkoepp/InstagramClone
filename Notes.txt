@@ -11,5 +11,15 @@ Can do different styles in array:
     <Image style={[styles.icon, {height: 40, width: 40}]} source={config.images.heartIcon} />
 
 
+LoginSignup
+
+MainApp => Feed
+           Profile
+           Camera 
+
+SwitchNavigator (switch between two mains) [ only 2 states, logged in or not ], simplified StackNav
+
+TabNavigator (swtich between Feed, Prof, & Camera)
 
 
+install react navigator: npm i -S react-navigation

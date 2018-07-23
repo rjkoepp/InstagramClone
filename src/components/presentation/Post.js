@@ -23,7 +23,6 @@ class Post extends Component {
     }
 
     render() {
-        console.log(this.props)
         const imageHeight = Math.floor(this.state.screenWidth * 1.1);
         // calculate image URI, append cropping param
 
