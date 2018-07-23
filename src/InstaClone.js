@@ -5,11 +5,19 @@ import {
     StyleSheet,
 } from 'react-native';
 import { createSwitchNavigator, TabNavigator } from 'react-navigation';
-import { MainFeed, Login } from './components/screens';
+import { MainFeed, Login, Camera, Profile } from './components/screens';
+
+const Tabs = TabNavigator({
+    feed: MainFeed,
+    camera: Camera,
+    profile: Profile
+
+})
+
 
 const MainStack = createSwitchNavigator({
     login: Login,
-    main: MainFeed
+    main: Tabs,
 })
 
 
