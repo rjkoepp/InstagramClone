@@ -6,7 +6,7 @@ import { FlatList } from 'react-native';
 class PostFeed extends Component {
 
     _renderPost({ item }) {
-        return <Post />;
+        return <Post id={item} />;
     }
     _returnKey(item) {
         return item.toString();

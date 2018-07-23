@@ -26,7 +26,9 @@ class Post extends Component {
 
         const imageHeight = Math.floor(this.state.screenWidth * 1.1);
         // calculate image URI, append cropping param
-        const imageUri = "https://lh3.googleusercontent.com/ipcN07_zb9fZ_F3R84YU1Iw2EybnJxVh0jkW9LgqmlPcT6zosNz7-R8vpVRpjtl3j6YxKpB2AcXur8gvkFy4Ucm3Zw"
+
+        const imageSelection = (this.props.id % 2 == 0) ? 'https://lh3.googleusercontent.com/BLN7srZLtuIwMiBpub05_ve1T0LLmEXoWNtR0fVKKXgi9865QtukmpYe-zmtbxJ8c14gZ1GbH1zl-kGP8ZCXsnM1k7M' : "https://lh3.googleusercontent.com/ipcN07_zb9fZ_F3R84YU1Iw2EybnJxVh0jkW9LgqmlPcT6zosNz7-R8vpVRpjtl3j6YxKpB2AcXur8gvkFy4Ucm3Zw"
+        const imageUri = imageSelection
             + "=s" + imageHeight + '-c'
 
         const heart = (this.state.liked) ? config.images.filledHeartIcon : config.images.heartIcon;
