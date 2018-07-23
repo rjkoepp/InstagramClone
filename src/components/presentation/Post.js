@@ -23,11 +23,11 @@ class Post extends Component {
     }
 
     render() {
-
+        console.log(this.props)
         const imageHeight = Math.floor(this.state.screenWidth * 1.1);
         // calculate image URI, append cropping param
 
-        const imageSelection = (this.props.id % 2 == 0) ? 'https://lh3.googleusercontent.com/BLN7srZLtuIwMiBpub05_ve1T0LLmEXoWNtR0fVKKXgi9865QtukmpYe-zmtbxJ8c14gZ1GbH1zl-kGP8ZCXsnM1k7M' : "https://lh3.googleusercontent.com/ipcN07_zb9fZ_F3R84YU1Iw2EybnJxVh0jkW9LgqmlPcT6zosNz7-R8vpVRpjtl3j6YxKpB2AcXur8gvkFy4Ucm3Zw"
+        const imageSelection = (this.props.id % 2 == 0) ? 'https://lh3.googleusercontent.com/BLN7srZLtuIwMiBpub05_ve1T0LLmEXoWNtR0fVKKXgi9865QtukmpYe-zmtbxJ8c14gZ1GbH1zl-kGP8ZCXsnM1k7M' : "https://lh3.googleusercontent.com/-S_RfDt7K9xSxrUPXJpBxkMSU0M43AZIC_t26qkArlZfYDZ4hnOTIqa8QAG-FTpDyjvUYZ6i-IV5I-vFhbUiqwf5"
         const imageUri = imageSelection
             + "=s" + imageHeight + '-c'
 
