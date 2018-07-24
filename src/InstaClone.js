@@ -27,7 +27,6 @@ const MainStack = createSwitchNavigator({
 class InstaClone extends Component {
     render() {
         return (
-            // <MainFeed />
             <MainStack />
         );
     }
