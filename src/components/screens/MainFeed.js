@@ -21,6 +21,7 @@ class InstaClone extends Component {
                 <View style={styles.tempNav}>
                     <Text>Instagram</Text>
                 </View>
+
                 <PostFeed />
 
             </View >

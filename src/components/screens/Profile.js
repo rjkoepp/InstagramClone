@@ -15,7 +15,7 @@ class Profile extends Component {
                 style={{ height: 100 + '%', width: 100 + '%', flex: 1, justifyContent: 'center', alignItems: 'center' }}
                 onPress={() => { this.login() }}
             >
-                <Text> Login Page</Text>
+                <Text> Future Profile Page</Text>
             </TouchableOpacity>
         )
     }

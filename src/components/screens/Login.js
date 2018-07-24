@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, Button } from 'react-native';
 
 class Login extends Component {
 
     login() {
 
         // Navigate to Main app
-        this.props.navigation.navigate('main'); // use key, nagivation prop is given by higher order component
+
+        this.props.navigation.navigate('register'); // use key, nagivation prop is given by higher order component
 
     }
     render() {
@@ -15,7 +16,7 @@ class Login extends Component {
                 style={{ height: 100 + '%', width: 100 + '%', flex: 1, justifyContent: 'center', alignItems: 'center' }}
                 onPress={() => { this.login() }}
             >
-                <Text> Login Page</Text>
+                <Text> New user</Text>
             </TouchableOpacity>
         )
     }
