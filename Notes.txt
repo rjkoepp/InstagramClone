@@ -1,6 +1,6 @@
 1:11:30
-- starts to use turbo :( 
-    -- time to start node js ?? :0 // type script sorta thing
+- turbo server
+- will implement own node.js server w/ mongodb later
 componentDidMount() {
     // once window mounts, get screen width
     this.setState({
